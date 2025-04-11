@@ -10,7 +10,7 @@ docker pull akshat271/pgduck
 To start the container
 ```bash
 docker run -d -e POSTGRES_PASSWORD=duckdb pgduck;
-docker exec -it pgduck bash
+docker exec -it <pgduck_container_id> bash # get container Id with docker ps
 ```
 
 ## Read Data from Iceberg table
